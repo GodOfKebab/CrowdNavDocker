@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  python:
+    build: .
+    volumes:
+      - ".:/app/crowd"
+    network_mode: host
+    environment:
+      - DISPLAY
