@@ -32,6 +32,21 @@ outperforming state-of-the-art methods.
 pip install -e .
 ```
 
+## Docker Setup
+
+Run the container:
+
+```
+docker compose up --build python
+```
+
+Create a terminal from that container. Run the training like so:
+
+```
+cd /app/crowd/crowd_nav
+python train.py --policy sarl
+```
+
 ## Getting Started
 This repository is organized in two parts: gym_crowd/ folder contains the simulation environment and
 crowd_nav/ folder contains codes for training and testing the policies. Details of the simulation framework can be found
